@@ -1,7 +1,7 @@
-# The Voidrice (Luke Smith <https://lukesmith.xyz>'s dotfiles)
+# The Jocorice (Jocomol's <https://jocomol.ch>'s dotfiles)
 
-These are the dotfiles deployed by [LARBS](https://larbs.xyz) and as seen on
-[my YouTube channel](https://youtube.com/c/lukesmithxyz).
+These are the dotfiles deployed by [JARBS](https://larbs.xyz) and as seen on
+[Luke's YouTube channel](https://youtube.com/c/lukesmithxyz).
 
 - Very useful scripts are in `~/.local/bin/`
 - Settings for:
@@ -23,9 +23,9 @@ These are the dotfiles deployed by [LARBS](https://larbs.xyz) and as seen on
 
 These dotfiles are intended to go with numerous suckless programs I use:
 
-- [dwm](https://github.com/lukesmithxyz/dwm) (window manager)
-- [dwmblocks](https://github.com/lukesmithxyz/dwmblocks) (statusbar)
-- [st](https://github.com/lukesmithxyz/st) (terminal emulator)
+- [dwm](https://github.com/jocomol/dwm) (window manager)
+- [dwmblocks](https://github.com/jocomol/dwmblocks) (statusbar)
+- [st](https://github.com/jocomol/st) (terminal emulator)
 
 I also recommend trying out
 [mutt-wizard](https://github.com/lukesmithxyz/mutt-wizard), which additionally
@@ -35,14 +35,14 @@ as well.
 
 ## Install these dotfiles and all dependencies
 
-Use [LARBS](https://larbs.xyz) to autoinstall everything:
+Use [JARBS](https://larbs.xyz) to autoinstall everything:
 
 ```
 curl -LO larbs.xyz/larbs.sh
 ```
 
 or clone the repo files directly to your home directory and install the
-[dependencies](https://github.com/LukeSmithxyz/LARBS/blob/master/static/progs.csv).
+[dependencies](https://github.com/Jocomol/LARBS/blob/master/static/progs.csv).
 
 ## Default Desktop Artwork
 
