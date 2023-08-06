@@ -33,16 +33,22 @@ alias \
 
 # Colorize commands when possible.
 alias \
-	ls="ls -hN --color=auto --group-directories-first" \
+	ls="lsd -h --color=auto --group-directories-first" \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
 	ccat="highlight --out-format=ansi" \
 	ip="ip -color=auto"
 
+# Neo Commands
+alias \
+	sxiv="nsxiv" \
+	vim="nvim"
+
 # These common commands are just too long! Abbreviate them.
 alias \
 	ka="killall" \
 	g="git" \
+	s="nsxiv" \
 	trem="transmission-remote" \
 	YT="youtube-viewer" \
 	sdn="shutdown -h now" \
@@ -56,6 +62,7 @@ alias \
 
 alias \
 	lf="lfub" \
+	ll="ls -lah" \
 	magit="nvim -c MagitOnly" \
 	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc" \
 	weath="less -S ${XDG_CACHE_HOME:-$HOME/.cache}/weatherreport" \

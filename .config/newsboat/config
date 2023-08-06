@@ -1,4 +1,9 @@
-#show-read-feeds no
+urls-source "miniflux"
+miniflux-url ""
+miniflux-login ""
+miniflux-password ""
+
+show-read-feeds no
 auto-reload yes
 
 external-url-viewer "urlscan -dc -r 'linkhandler {}'"
