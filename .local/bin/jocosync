@@ -16,13 +16,13 @@ while getopts 'cmtnr' flag; do
   esac
 done
 
-if [ $c_flag -eq 1 ] || [ $ALL -eq 1 ] && command -v calcurse-caldav
+if [ $c_flag -eq 1 ] || [ $ALL -eq 1 ] && command -v vdirsyncer
 then
 	echo -----VDIRSYNCER-----
     vdirsyncer sync
 fi
 
-if [ $m_flag -eq 1 ] || [ $ALL -eq 1 ] && command -v mw
+if [ $m_flag -eq 1 ] || [ $ALL -eq 1 ] && command -v mailsync
 then
 	echo -----MUTTWIZARD-----
   	mailsync
