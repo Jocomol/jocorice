@@ -1,0 +1,36 @@
+[general]
+status_path = "~/.config/vdirsyncer/status/"
+
+[pair work_calendar]
+a = "work_calendar_local"
+b = "work_calendar_remote"
+collections = ["from a","from b"]
+conflict_resolution = "b wins"
+
+[pair calendars]
+a = "nc_calendar"
+b = "local_calendar"
+collections = ["from a", "from b"]
+metadata = ["color"]
+
+[storage local_calendar]
+type = "filesystem"
+path = "~/.calendars/private"
+fileext = ".ics"
+
+[storage nc_calendar]
+type = "caldav"
+url = "{{ nc_calendar_url }}"
+username = "{{ nc_calendar_username }}"
+password = "{{ nc_calendar_password }}"
+
+[storage work_calendar_local]
+type = "filesystem"
+path = "~/.calendars/work"
+fileext = ".ics"
+
+[storage work_calendar_remote]
+type = "caldav"
+url = "{{ work_calendar_url }}"
+username = "{{ work_calendar_username }}"
+password = "{{ work_calendar_password }}"
