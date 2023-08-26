@@ -1,7 +1,6 @@
-# The Jocorice (Jocomol's <https://jocomol.ch>'s dotfiles)
+# The Jocorice (Jocomol's <https://jocomol.ch/jarbs>'s dotfiles)
 
-These are the dotfiles deployed by [JARBS](https://larbs.xyz) and as seen on
-[Luke's YouTube channel](https://youtube.com/c/lukesmithxyz).
+These are the dotfiles deployed by [JARBS](https://jocomol.ch/jarbs)
 
 - Very useful scripts are in `~/.local/bin/`
 - Settings for:
@@ -28,21 +27,21 @@ These dotfiles are intended to go with numerous suckless programs I use:
 - [st](https://github.com/jocomol/st) (terminal emulator)
 
 I also recommend trying out
-[mutt-wizard](https://github.com/lukesmithxyz/mutt-wizard), which additionally
+[mutt-wizard](https://github.com/jocomol/mutt-wizard), which additionally
 works with this setup. It gives you an easy-to-install terminal-based email
 client regardless of your email provider. It is integrated into these dotfiles
 as well.
 
 ## Install these dotfiles and all dependencies
 
-Use [JARBS](https://larbs.xyz) to autoinstall everything:
+Use [JARBS](https://jocomol.ch/jarbs) to autoinstall everything:
 
 ```
-curl -LO larbs.xyz/larbs.sh
+curl -LO jocomol.ch/jarbs.sh
 ```
 
 or clone the repo files directly to your home directory and install the
-[dependencies](https://github.com/Jocomol/LARBS/blob/master/static/progs.csv).
+[dependencies](https://github.com/Jocomol/JARBS/blob/master/progs.csv).
 
 ## Default Desktop Artwork
 

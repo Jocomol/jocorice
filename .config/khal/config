@@ -1,0 +1,19 @@
+[calendars]
+
+[[local_calendar]]
+path = ~/.calendars/private/*
+type = discover
+color = dark green
+
+[[work_calendar_local]]
+path = ~/.calendars/work/*
+type = discover
+color = dark blue
+
+[locale]
+timeformat = %H:%M
+dateformat = %d.%m.%Y
+longdateformat = %d.%m.%Y
+datetimeformat = %d.%m.%Y %H:%M
+longdatetimeformat = %d.%m.%Y %H:%M
+weeknumbers = left
