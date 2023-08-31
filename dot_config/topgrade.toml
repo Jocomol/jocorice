@@ -4,7 +4,7 @@
 assume_yes = true
 
 # Disable specific steps - same options as the command line flag
-disable = ["gem", "vim", "dotnet"]
+disable = ["gem", "vim", "dotnet", "chezmoi"]
 
 # Ignore failures for these steps
 #ignore_failures = ["powershell"]
