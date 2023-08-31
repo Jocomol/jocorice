@@ -20,9 +20,9 @@ fileext = ".ics"
 
 [storage nc_calendar]
 type = "caldav"
-url = "{{ nc_calendar_url }}"
-username = "{{ nc_calendar_username }}"
-password = "{{ nc_calendar_password }}"
+url = "{{ (bitwardenFields "item" "Nextcloud").calendaruri.value}}"
+username = "{{ (bitwarden "item" "Nextcloud").login.username }}"
+password = "{{ (bitwarden "item" "Nextcloud").login.password }}"
 
 [storage work_calendar_local]
 type = "filesystem"
@@ -31,6 +31,6 @@ fileext = ".ics"
 
 [storage work_calendar_remote]
 type = "caldav"
-url = "{{ work_calendar_url }}"
-username = "{{ work_calendar_username }}"
-password = "{{ work_calendar_password }}"
+url = "{{ (bitwardenFields "item" "Kopano").url.value}}"
+username = "{{ (bitwarden "item" "Kopano").login.username }}"
+password = "{{ (bitwarden "item" "Kopano").login.password }}"

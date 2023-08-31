@@ -1,7 +1,7 @@
 urls-source "miniflux"
-miniflux-url "{{ newsboat_url }}"
-miniflux-login "{{ newsboat_login }}"
-miniflux-password "{{ newsboat_password }}"
+miniflux-url "{{ (bitwardenFields "item" "RSS").url.value }}"
+miniflux-login "{{ (bitwarden "item" "RSS").login.username}}"
+miniflux-password "{{ (bitwarden "item" "RSS").login.password }}"
 
 show-read-feeds no
 auto-reload yes
