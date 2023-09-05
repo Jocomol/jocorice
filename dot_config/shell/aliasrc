@@ -43,6 +43,10 @@ alias \
 alias \
 	sxiv="nsxiv" \
 	vim="nvim"
+# Todo commands
+alias \
+	ptodo="todo list personal" \
+	wtodo="todo list FLDPRFX_2F5BE02AFF824F0C85025B10B9D838E9"
 
 # These common commands are just too long! Abbreviate them.
 alias \
