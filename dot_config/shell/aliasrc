@@ -26,9 +26,10 @@ alias \
 	bc="bc -ql" \
 	rsync="rsync -vrPlu" \
 	mkd="mkdir -pv" \
-	yt="yt-dlp --embed-metadata -i" \
+	yt="yt-dlp --embed-metadata -i -o '%(title)s.%(ext)s' " \
 	yta="yt -x -f bestaudio/best" \
 	ytt="yt --skip-download --write-thumbnail" \
+	yt4="yt --format mp4 --embed-thumbnail"
 	ffmpeg="ffmpeg -hide_banner"
 
 # Colorize commands when possible.
