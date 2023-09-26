@@ -29,7 +29,9 @@ alias \
 	yt="yt-dlp --embed-metadata -i -o '%(title)s.%(ext)s' " \
 	yta="yt -x -f bestaudio/best" \
 	ytt="yt --skip-download --write-thumbnail" \
-	yt4="yt --format mp4 --embed-thumbnail"
+	yt4="yt --format mp4 --embed-thumbnail" \
+	ytp="yt4 --yes-playlist -o '%(playlist_index)s-%(title)s.%(ext)s'" \
+	ytc="yt4 -o '%(uploader)s-%(playlist_index)s-%(title)s.%(ext)s'" \
 	ffmpeg="ffmpeg -hide_banner"
 
 # Colorize commands when possible.
