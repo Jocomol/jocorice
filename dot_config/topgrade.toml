@@ -39,6 +39,7 @@ repos = [
     "~/Development/*",
     "~/Development/school/*",
     "~/Documents/school/operating_systems_BTI1341q/git/*",
+    "~/.local/share/nvim/vimwiki",
 ]
 
 # Don't pull the predefined git repos
