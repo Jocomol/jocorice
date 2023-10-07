@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# Function to set Git username and email based on repository type
+configure_git() {
+    local repository_type="$1"
+    local git_user_name=""
+    local git_user_email=""
+
+    case "$repository_type" in
+        "-p")
+            git_user_name="Jocomol"
+            git_user_email="jocomol@protonmail.com"
+            ;;
+        "-s")
+            git_user_name="meiej13"
+            git_user_email="meiej13@bfh.com"
+            ;;
+        "-w")
+            git_user_name="joelm"
+            git_user_email="joel.meier@adfinis.com"
+            ;;
+        "-g")
+	    git_user_name="Joel Meier"
+            git_user_email="joel.meier@adfinis.com"
+            ;;
+        *)
+            echo "Invalid repository type: $repository_type"
+            exit 1
+            ;;
+    esac
+
+    git config user.name "$git_user_name"
+    git config user.email "$git_user_email"
+}
+
+# Check if a single argument is provided (the repository type)
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 [-p|-s|-w|-g]"
+    exit 1
+fi
+
+repository_type="$1"
+
+# Configure Git based on the provided repository type
+configure_git "$repository_type"
+
+echo "Git configuration for $repository_type repository is set."
