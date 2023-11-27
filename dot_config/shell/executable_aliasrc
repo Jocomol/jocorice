@@ -48,10 +48,14 @@ alias \
 	vim="nvim"
 # Todo commands
 alias \
-	ptodo="todo list personal" \
+	ptodo="todo list personal --category personal" \
+	shtodo="todo list personal --category shit" \
+	mtodo="todo list personal --category money" \
+	btodo="todo list personal --category backlog" \
 	wtodo="todo list FLDPRFX_2F5BE02AFF824F0C85025B10B9D838E9" \
 	jtodo="todo list personal --category jarbs" \
-	stodo="todo list personal --category school"
+	stodo="todo list personal --category school" \
+	htodo="echo \"ptodo, shtodo, mtodo, wtodo, jtodo, stodo\""
 
 # These common commands are just too long! Abbreviate them.
 alias \
