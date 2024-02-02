@@ -46,7 +46,9 @@ set noshowcmd
 " Perform dot commands over visual blocks:
 	vnoremap . :normal .<CR>
 " Spell-check set to <leader>o, 'o' for 'orthography':
-	map <leader>o :setlocal spell! spelllang=en_us<CR>
+	map <leader>o :setlocal spell! spelllang=de_ch<CR>
+" Spell-check set to <leader>k, 'k' for 'orthography' but not quite:
+	map <leader>k :setlocal spell! spelllang=en_us<CR>
 " Splits open at the bottom and right, which is non-retarded, unlike vim defaults.
 	set splitbelow splitright
 

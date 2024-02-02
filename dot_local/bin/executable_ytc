@@ -1,0 +1,5 @@
+yt-dlp --embed-metadata -i --format mp4 --embed-thumbnail -o '%(uploader)s/%(playlist_title)s/%(playlist_index)s-%(title)s.%(ext)s' "https://www.youtube.com/$1/playlists"
+yt-dlp --embed-metadata -i --format mp4 --embed-thumbnail -o '%(uploader)s/%(playlist_index)s-%(title)s.%(ext)s' "https://www.youtube.com/$1/videos"
+detox -r * #BEWARE OF THIS LINE.
+rdfind -makesymlinks true .
+echo "done"

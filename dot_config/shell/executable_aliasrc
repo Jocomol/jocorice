@@ -15,7 +15,7 @@ done; unset command
 
 se() {
 	choice="$(find ~/.local/bin -mindepth 1 -printf '%P\n' | fzf)"
-	[ -f "$HOME/.local/bin/$choice" ] && $EDITOR "$HOME/.local/bin/$choice"
+	[ -f "$HOME/.local/bin/$choice" ] && chezmoi edit "$HOME/.local/bin/$choice" && chezmoi apply -v "$HOME/.local/bin/$choice"
 	;}
 
 # Verbosity and settings that you pretty much just always are going to want.
@@ -31,7 +31,6 @@ alias \
 	ytt="yt --skip-download --write-thumbnail" \
 	yt4="yt --format mp4 --embed-thumbnail" \
 	ytp="yt4 --yes-playlist -o '%(playlist_index)s-%(title)s.%(ext)s'" \
-	ytc="yt4 -o '%(uploader)s-%(playlist_index)s-%(title)s.%(ext)s'" \
 	ffmpeg="ffmpeg -hide_banner"
 
 # Colorize commands when possible.
