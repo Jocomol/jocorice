@@ -17,6 +17,10 @@ se() {
 	choice="$(find ~/.local/bin -mindepth 1 -printf '%P\n' | fzf)"
 	[ -f "$HOME/.local/bin/$choice" ] && chezmoi edit "$HOME/.local/bin/$choice" && chezmoi apply -v "$HOME/.local/bin/$choice"
 	;}
+ce() {
+	choice="$(find ~/.config -mindepth 1 -printf '%P\n' | fzf)"
+	[ -f "$HOME/.config/$choice" ] && chezmoi edit "$HOME/.config/$choice" && chezmoi apply -v "$HOME/.config/$choice"
+	;}
 
 # Verbosity and settings that you pretty much just always are going to want.
 alias \
