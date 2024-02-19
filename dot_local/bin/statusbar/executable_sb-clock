@@ -19,9 +19,9 @@ case "$clock" in
 esac
 
 case $BLOCK_BUTTON in
-	1) notify-send "This Month" "$(cal | sed "s/\<$(date +'%e')\>/<b><span color='red'>&<\/span><\/b>/")" && notify-send "Appointments" "$(calcurse -d3)" ;;
-	2) setsid -f "$TERMINAL" -e calcurse ;;
-	3) notify-send "📅 Time/date module" "\- Left click to show upcoming appointments for the next three days via \`calcurse -d3\` and show the month via \`cal\`
+	1) notify-send "This Month" "$(cal | sed "s/\<$(date +'%e')\>/<b><span color='red'>&<\/span><\/b>/")" && notify-send "Appointments" "$(khal list -a personal today 1d --format '{cancelled}{start-time}{to-style}{end-time}: {title} @ {location'})"  ;;
+	2) setsid -f "$TERMINAL" -e ikhal;;
+	3) notify-send "📅 Time/date module" "\- Left click to show upcoming appointments for the next three days via \`ikhal\` and show the month via \`cal\`
 - Middle click opens calcurse if installed" ;;
 	6) setsid -f "$TERMINAL" -e "$EDITOR" "$0" ;;
 esac
