@@ -59,6 +59,10 @@ alias \
 	jtodo="todo list personal --category jarbs" \
 	stodo="todo list personal --category school" \
 	htodo="echo \"ptodo, shtodo, mtodo, wtodo, jtodo, stodo\""
+nstodo() {
+	DUEDATE=$(date -d "+7 days" -u '+%d.%m.%Y')
+	todo new --list personal --category school --due $DUEDATE $@
+}
 
 # These common commands are just too long! Abbreviate them.
 alias \
