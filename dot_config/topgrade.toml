@@ -38,6 +38,7 @@ disable = ["gem", "vim", "dotnet", "chezmoi"]
 repos = [
     "~/Development/*",
     "~/Development/school/*",
+    "~/Documents/study/bfh/*",
     "~/.local/share/nvim/vimwiki",
 ]
 
