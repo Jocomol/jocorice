@@ -5,6 +5,8 @@
 *.font: monospace:size=11
 
 URxvt*font:    xft:Hack Nerd Font:style=Regular:size=11
+window.background: #000000
+bar.background: #000000
 /* name		dark	light */
 /* black	0	8 */
 /* red		1	9 */
