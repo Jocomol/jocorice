@@ -55,10 +55,11 @@ alias \
 	shtodo="todo list personal --category shit" \
 	mtodo="todo list personal --category money" \
 	btodo="todo list personal --category backlog" \
+	htodo="todo list personal --category home" \
 	wtodo="todo list FLDPRFX_2F5BE02AFF824F0C85025B10B9D838E9" \
 	jtodo="todo list personal --category jarbs" \
 	stodo="todo list personal --category school" \
-	htodo="echo \"ptodo, shtodo, mtodo, wtodo, jtodo, stodo\""
+	ltodo="echo \"ptodo, shtodo, mtodo, wtodo, jtodo, stodo, nstodo, htodo\""
 nstodo() {
 	DUEDATE=$(date -d "+7 days" -u '+%d.%m.%Y')
 	todo new --list personal --category school --due $DUEDATE $@
