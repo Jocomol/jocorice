@@ -58,7 +58,9 @@ repos = [
 
 # Custom commands
 [commands]
-"mandb"="mandb"
+"mandb"="sudo mandb"
+"vdirsyncer"="vdirsyncer sync"
+"mail"="mailsync"
 
 #[brew]
 #greedy_cask = true
